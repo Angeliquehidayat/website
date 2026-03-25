@@ -287,13 +287,13 @@
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-        overflow: hidden; /* Tetap overflow hidden */
+        overflow: hidden;
       }
 
       .card-icon img {
-        width: 50px; /* Diperkecil dari 70px jadi 50px */
-        height: 50px; /* Diperkecil dari 70px jadi 50px */
-        object-fit: contain; /* Ganti dari cover jadi contain */
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
         display: block;
       }
 
@@ -309,8 +309,11 @@
         transition: 0.3s;
       }
 
+      /* UPDATE: Membuat semua gambar di media modal memiliki ukuran yang seragam */
       .media-card img {
         width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
         border-radius: 10px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         transition: 0.3s;
@@ -870,6 +873,12 @@
                 <p>Honeycombers</p>
               </a>
             </div>
+              <div class="col-md-4 col-6">
+              <a href="https://thehoneycombers.com/bali/tirtha-uluwatu-bali-wedding-venue/" target="_blank" class="media-card">
+                <img src="img/gambar6.jpeg" class="img-fluid" alt="Inside Tirtha Bali" />
+                <p>Honeycombers</p>
+              </a>
+            </div>
             <div class="col-md-4 col-6">
               <a href="https://www.weddingchicks.com/wedding-event-venues/most-instagrammable-wedding-venues/" target="_blank" class="media-card">
                 <img src="img/gambar2.jpeg" class="img-fluid" alt="Wedding Chicks" />
@@ -892,12 +901,6 @@
               <a href="https://www.stylemepretty.com/2019/12/05/if-youre-having-a-multicultural-wedding-tirtha-uluwatu-in-bali-may-be-the-venue-for-you/" target="_blank" class="media-card">
                 <img src="img/gambar5.jpg" class="img-fluid" alt="Style Me Pretty" />
                 <p>Style Me Pretty</p>
-              </a>
-            </div>
-            <div class="col-md-4 col-6">
-              <a href="https://thehoneycombers.com/bali/tirtha-uluwatu-bali-wedding-venue/" target="_blank" class="media-card">
-                <img src="img/gambar6.jpeg" class="img-fluid" alt="Inside Tirtha Bali" />
-                <p>Inside Tirtha Bali</p>
               </a>
             </div>
             <div class="col-md-4 col-6">

@@ -591,13 +591,13 @@
       #mediaModal .modal-header-custom {
         justify-content: flex-start;
       }
-      
+
       #mediaModal .modal-header-custom h3 {
         text-align: left;
         margin: 0;
         flex: 1;
       }
-      
+
       #mediaModal .media-description {
         text-align: left;
         padding: 12px 0;
@@ -628,6 +628,25 @@
         margin-bottom: 1rem;
         padding-bottom: 0.5rem;
         border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+      }
+
+      .about-wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 60px;
+      }
+
+      .about-paragraph {
+        margin-bottom: 1rem;
+        font-size: 17px;
+        line-height: 1.8;
+        color: rgba(255, 255, 255, 0.9);
+        font-family: var(--font-body);
+      }
+
+      .about-paragraph:last-child {
+        margin-bottom: 0;
       }
     </style>
   </head>
@@ -669,10 +688,13 @@
       <img src="img/bgbali.jpeg" alt="Bali background" />
       <div class="container text-center">
         <h2 class="about-title mb-4">About</h2>
-        <p class="about-description">
-          Angelique Ivana Hidayat is a communications and branding professional with a background in five-star hospitality, corporate environments, and luxury weddings. Having worked across premium hotels, corporate organizations and iconic
-          wedding resort destinations, she brings a refined understanding of service, storytelling, and brand experience. Her work bridges strategy and emotion—shaping brands that feel considered, cohesive, and meaningful.
-        </p>
+
+        <div class="about-wrapper">
+          <p class="about-paragraph">Angelique Ivana Hidayat is a communications and branding professional with a background in five-star hospitality, corporate environments, and luxury weddings.</p>
+          <p class="about-paragraph">Having worked across premium hotels, corporate organizations and iconic wedding resort destinations, she brings a refined understanding of service, storytelling, and brand experience.</p>
+          <p class="about-paragraph">Her work bridges strategy and emotion—shaping brands that feel considered, cohesive, and meaningful.</p>
+        </div>
+
         <div class="row g-4">
           <div class="col-md-4">
             <div class="glass-card" data-bs-toggle="modal" data-bs-target="#experienceModal">
@@ -873,7 +895,7 @@
                 <p>Honeycombers</p>
               </a>
             </div>
-              <div class="col-md-4 col-6">
+            <div class="col-md-4 col-6">
               <a href="https://thehoneycombers.com/bali/tirtha-uluwatu-bali-wedding-venue/" target="_blank" class="media-card">
                 <img src="img/gambar6.jpeg" class="img-fluid" alt="Inside Tirtha Bali" />
                 <p>Honeycombers</p>

@@ -629,6 +629,68 @@
         padding-bottom: 0.5rem;
         border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
       }
+
+            /* WIDE LINKEDIN CARD - Ukuran sedang, transparan */
+      .wide-linkedin-card {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(12px);
+        border-radius: 20px;
+        padding: 24px 32px;
+        transition: 0.4s;
+        cursor: pointer;
+        text-align: center;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 48px;
+      }
+
+      .linkedin-icon-container {
+        background: white;
+        border-radius: 50px;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+      }
+
+      .linkedin-custom-icon {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+      }
+
+      .wide-linkedin-card:hover {
+        transform: translateY(-8px);
+        background: rgba(255, 255, 255, 0.12);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+      }
+
+      .wide-linkedin-card a {
+        text-decoration: none;
+        display: block;
+      }
+
+      .arrow-icon {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .wide-linkedin-card {
+          padding: 18px 24px;
+        }
+        .linkedin-icon-container {
+          width: 50px;
+          height: 50px;
+        }
+        .linkedin-custom-icon {
+          width: 32px;
+          height: 32px;
+        }
+      }
     </style>
   </head>
 
@@ -673,6 +735,16 @@
           Angelique Ivana Hidayat is a communications and branding professional with a background in five-star hospitality, corporate environments, and luxury weddings. Having worked across premium hotels, corporate organizations and iconic
           wedding resort destinations, she brings a refined understanding of service, storytelling, and brand experience. Her work bridges strategy and emotion—shaping brands that feel considered, cohesive, and meaningful.
         </p>
+
+         <div class="wide-linkedin-card">
+          <a href="https://www.linkedin.com/feed/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7450072587298045952&highlightedUpdateType=SHARED_BY_YOUR_NETWORK&origin=inapp&showCommentBox=true" target="_blank" rel="noopener noreferrer">
+            <div class="linkedin-icon-container">
+              <img src="img/linkedin-logo.png" alt="LinkedIn" class="linkedin-custom-icon" />
+            </div>
+            <i class="bi bi-box-arrow-up-right arrow-icon"></i>
+          </a>
+        </div>
+
         <div class="row g-4">
           <div class="col-md-4">
             <div class="glass-card" data-bs-toggle="modal" data-bs-target="#experienceModal">
